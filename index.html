@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATS</title>
+    <link rel="stylesheet" href="cat.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="" class="logo">Pretty Cats</a>
+            <nav>
+                <a href="" class="btn" id="add">Add</a>
+            </nav>
+        </header>
+        <main></main>
+        <footer>
+            ©️ 2022 Frontend 8 group </footer>
+    </div>
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup_close"></div>
+            <div class="popup_content"></div>
+            <h2>Добавить котика</h2>
+            <form id="addForm">
+                <input type="text" name="name" placeholder="Имя котика" required>
+                <input type="number" name="id" placeholder="id" required>
+                <input type="text" name="img_link" placeholder="Ссылка на картинку">
+                <input type="number" name="age" placeholder="Возраст" min="0">
+                <input type="number" name="rate" placeholder="Рейтинг " min= "0" max="10">
+                <label for="fav">
+                    <input type="checkbox" name="favourite">
+                    Любимчик
+                </label>
+                <textarea name="description" placeholder="Описание"></textarea>
+                <button type="submit">Добавить</button>
+               </div>
+ </form>
+ </div>
+</div>
+<div class="modal-wrapper">
+    <div class="modal">
+        <div class="modal_close"></div>
+        <div class="modal_content"></div>
+        <h2>Информация о питомце</h2>
+        <form id="show_data">
+            <h6>Кличка</h6>
+            <input type="text" id="catName" name="name" value=" " >
+            <h6>id</h6>
+            <input type="number" id="catId" name="id" value=" " readonly >
+            <h6>Cсылка на фото</h6>
+            <input type="text" id="imgCat" name="img_link" value=" ">
+            <h6>Возраст</h6>
+            <input type="number" id="ageCat" name="age" >
+            <h6>Рейтинг</h6>
+            <input type="number" id="rateCat" name="rate"  min= "0" max="10">
+        
+            <label for="fav" id="favouriteCat">
+                <input type="checkbox" name="favourite">
+                    Любимчик
+        </label>
+            <textarea name="description" placeholder="Описание"></textarea>
+            <button type="submit" id="edit">Редактировать</button>
+           </div>
+</form>
+</div>
+</div>
+    <script src="cat.js"></script>
+</body>
+</html>
